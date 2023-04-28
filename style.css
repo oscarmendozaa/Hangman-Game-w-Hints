@@ -1,0 +1,176 @@
+/* Game container */
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Word display */
+  .word-display {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Guess input */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  input[type="text"] {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-right: 10px;
+    width: 50px;
+  }
+  
+  button[type="submit"] {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  
+  /* Hangman display */
+  .hangman-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .head {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+  }
+  
+  .body {
+    width: 20px;
+    height: 100px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+  }
+  
+  .left-arm,
+  .right-arm,
+  .left-leg,
+  .right-leg {
+    width: 50px;
+    height: 20px;
+    background-color: #f5f5f5;
+    position: absolute;
+  }
+  
+  .left-arm {
+    top: 50px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .right-arm {
+    top: 50px;
+    right: 0;
+    transform: rotate(45deg);
+  }
+  
+  .left-leg {
+    bottom: 0;
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+  
+  .right-leg {
+    bottom: 0;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  .hangman-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .head {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1d1c1c;
+    margin-bottom: 20px;
+    visibility: hidden;
+  }
+  
+  .body {
+    width: 20px;
+    height: 100px;
+    background-color: #0c0c0c;
+    margin-bottom: 20px;
+    visibility: hidden;
+  }
+  
+  .left-arm,
+  .right-arm,
+  .left-leg,
+  .right-leg {
+    width: 50px;
+    height: 20px;
+    background-color: #0f0f0f;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .left-arm {
+    top: 90px;
+    left: 264px;
+    transform: rotate(-35deg);
+  }
+  
+  .right-arm {
+    top: 90px;
+    left: 219px;
+    transform: rotate(45deg);
+  }
+  
+  .left-leg {
+    bottom: 0;
+    left: 219px;
+    transform: rotate(-45deg);
+  }
+  
+  .right-leg {
+    bottom: 0;
+    right: 220px;
+    transform: rotate(45deg);
+  }
+
+  .show  {
+    visibility: visible;
+  }
+    
+  
+  
+  /* Hint display */
+  .hint-display {
+    margin-bottom: 20px;
+  }
+  
+  #hint-button {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+  
+  #hint-count {
+    font-weight: bold;
+  }
+  
